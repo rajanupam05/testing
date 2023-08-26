@@ -17,7 +17,7 @@ public class testcase1
 	public static void tc1() throws FileNotFoundException, IOException
 	{
 		Properties pr=propertieshandle.loadpropertieshandle("uri.properties");
-		String data=jsonhandle.loadjsonfile("..resources/request.payload.json");
+		String data=jsonhandle.loadjsonfile("../src/test/java/org/testing/resources/request.payload.json");
 		Random r=new Random();
 		Integer input=r.nextInt();
 		String responsebody=repalcevalue.value(data, "id", input.toString());
