@@ -16,6 +16,5 @@ public class jsonhandle
 		JSONTokener jt=new JSONTokener(fs);
 		JSONObject j=new JSONObject(jt);
 		return j.toString();
-		
 	}
 }
